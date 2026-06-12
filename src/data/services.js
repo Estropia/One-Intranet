@@ -7,11 +7,11 @@ export const services = [
     id: 'fibre',
     name: 'Fibre Internet Installation',
     tagline: 'High-speed connectivity for homes, schools, and businesses.',
-    body: 'We design and deploy reliable internet infrastructure — fibre and wireless — that reaches urban centers and underserved rural communities alike, bridging the digital divide one barangay at a time.',
+    body: '',
     image: noc,
     points: [
       'Fibre & wireless network deployment',
-      'Network Operations Center (NOC) monitoring',
+      'Fiber installation',
       'Coverage for residential, commercial & LGU sites',
       'Last-mile connectivity for rural communities',
     ],

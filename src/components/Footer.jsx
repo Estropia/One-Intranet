@@ -10,10 +10,6 @@ export default function Footer() {
           <p className={styles.tag}>Power2Connect — clean energy & connectivity for every community.</p>
         </div>
         <div>
-          <h4>Visit</h4>
-          <p>Blk 1, New York St., Cresdaville II,<br/>San Juan, Taytay Rizal</p>
-        </div>
-        <div>
           <h4>Contact</h4>
           <p><a href="tel:+639544122708">+63 954 412 2708</a></p>
           <p><a href="mailto:ad.oneintranet@gmail.com">ad.oneintranet@gmail.com</a></p>

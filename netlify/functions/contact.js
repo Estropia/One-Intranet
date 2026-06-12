@@ -21,7 +21,7 @@ export default async (req) => {
 
   try {
     await resend.emails.send({
-      from: 'Contact Form <onboarding@resend.dev>',
+      from: 'Contact Form <noreply@oneintranet.co>',
       to: [process.env.CONTACT_TO_EMAIL],
       replyTo: email,
       subject: `New message from ${name}`,

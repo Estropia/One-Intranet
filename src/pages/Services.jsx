@@ -30,7 +30,7 @@ export default function Services() {
             <div className={styles.text}>
               <h2>{s.name}</h2>
               <p className={styles.tagline}>{s.tagline}</p>
-              <p>{s.body}</p>
+              {s.body && <p>{s.body}</p>}
               <ul>{s.points.map(p => <li key={p}>{p}</li>)}</ul>
               {s.gallery && (
                 <div className={styles.gallery}>
