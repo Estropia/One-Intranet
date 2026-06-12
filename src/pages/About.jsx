@@ -1,6 +1,5 @@
 import SectionHeading from '../components/SectionHeading.jsx'
 import Button from '../components/Button.jsx'
-import { leadership } from '../data/team.js'
 import meetings from '../assets/images/meetings-img.png'
 import coverPhoto from '../assets/images/cover-photo.png'
 import styles from './About.module.css'
@@ -28,23 +27,6 @@ export default function About() {
       <section className={`${styles.section} ${styles.mission}`}>
         <div className={`container ${styles.center}`}>
           <SectionHeading light align="center" eyebrow="Mission & Vision" title="Enhancing urban and rural living through sustainable solutions" lead="We commit to innovative technology for a brighter, smarter, and greener community." />
-        </div>
-      </section>
-
-      <section className={styles.section}>
-        <div className={`container ${styles.center}`}>
-          <SectionHeading title="Leadership" align="center" />
-          <div className={styles.teamGrid}>
-            {leadership
-              .filter(m => m.name !== 'Denise Mae Ferreras' && m.name !== 'Louie Ann Ferreras' && m.name !== 'Mae Anne E. Ferreras')
-              .map(m => (
-                <div key={m.name} className={styles.member}>
-                  <div className={styles.avatar}>{m.name.split(' ').map(w => w[0]).slice(0,2).join('')}</div>
-                  <h3>{m.name}</h3>
-                  <p>{m.role}</p>
-                </div>
-              ))}
-          </div>
         </div>
       </section>
 

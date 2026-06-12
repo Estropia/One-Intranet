@@ -11,7 +11,7 @@ export default function Footer() {
         </div>
         <div>
           <h4>Visit</h4>
-          <p>Blk. 4 Lot 15, Summerfield Villas,<br/>Taytay, Rizal, 1920, Philippines</p>
+          <p>Blk 1, New York St., Cresdaville II,<br/>San Juan, Taytay Rizal</p>
         </div>
         <div>
           <h4>Contact</h4>
