@@ -1,4 +1,4 @@
-# One Intranet Corporation — PowerToConnect
+# One Intranet Corporation — Power2Connect
 
 Public-facing website for One Intranet Corporation, a Philippine telecom and clean-energy company offering Fibre internet and Solar panel installations.
 
