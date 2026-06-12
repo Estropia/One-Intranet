@@ -6,7 +6,8 @@
 .storyImg { border-radius: var(--radius-lg); box-shadow: var(--shadow-card); aspect-ratio: 4/3; object-fit: cover; }
 .mission { background: linear-gradient(135deg, var(--c-navy-900), var(--c-navy-700)); }
 .center { text-align: center; }
-.teamGrid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; margin-top: 2.5rem; }
+.teamGrid { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; margin-top: 2.5rem; }
+.member { width: 220px; }
 .member { text-align: center; padding: 1.75rem; border-radius: var(--radius); background: var(--c-mist); }
 .avatar { width: 72px; height: 72px; margin: 0 auto 1rem; border-radius: 50%; display: grid; place-items: center; font-family: var(--font-display); font-weight: 800; color: var(--c-navy-900); background: linear-gradient(135deg, var(--c-green-400), var(--c-green-300)); }
 .member h3 { font-size: 1.1rem; }
@@ -17,8 +18,6 @@
 .cta { background: var(--c-navy-900); color: var(--c-white); }
 .cta h2 { font-size: var(--fs-h2); margin-bottom: 1.5rem; }
 
-@media (min-width: 640px) { .teamGrid { grid-template-columns: 1fr 1fr; } }
 @media (min-width: 1024px) {
   .storyGrid { grid-template-columns: 1.1fr 1fr; gap: 3rem; }
-  .teamGrid { grid-template-columns: repeat(4,1fr); }
 }

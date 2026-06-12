@@ -1,0 +1,10 @@
+.wrap { padding: 2rem 0; }
+.title { text-align: center; font-size: var(--fs-h2); font-family: var(--font-display); color: var(--c-navy-900); margin-bottom: 2rem; text-transform: uppercase; letter-spacing: .05em; }
+.scroll { overflow-x: auto; }
+.svg { width: 100%; min-width: 700px; display: block; }
+
+.box { fill: #fff; stroke: var(--c-navy-700); stroke-width: 1.5; }
+.roleText { font-size: 9px; font-weight: 600; fill: var(--c-muted); text-transform: uppercase; letter-spacing: .08em; font-family: var(--font-body); }
+.nameText { font-size: 11px; font-weight: 700; fill: var(--c-navy-900); font-family: var(--font-display); }
+.line { fill: none; stroke: var(--c-navy-700); stroke-width: 1.5; }
+.arrow { fill: var(--c-navy-700); }
