@@ -1,6 +1,5 @@
 import SectionHeading from '../components/SectionHeading.jsx'
 import Button from '../components/Button.jsx'
-import { leadership, departments, orgChart } from '../data/team.js'
 import meetings from '../assets/images/meetings-img.png'
 import coverPhoto from '../assets/images/cover-photo.png'
 import styles from './About.module.css'
@@ -31,26 +30,6 @@ export default function About() {
         </div>
       </section>
 
-      <section className={styles.section}>
-        <div className="container">
-          <SectionHeading eyebrow="The core team" title="Leadership" />
-          <div className={styles.teamGrid}>
-            {leadership.map(m => (
-              <div key={m.name} className={styles.member}>
-                <div className={styles.avatar}>{m.name.split(' ').map(w => w[0]).slice(0,2).join('')}</div>
-                <h3>{m.name}</h3>
-                <p>{m.role}</p>
-              </div>
-            ))}
-          </div>
-          <div className={styles.depts}>
-            {departments.map(d => <span key={d}>{d}</span>)}
-          </div>
-          <figure className={styles.org}>
-            <img src={orgChart} alt="Company organizational chart" loading="lazy" />
-          </figure>
-        </div>
-      </section>
 
       <section className={styles.cta}>
         <div className={`container ${styles.center}`}>
