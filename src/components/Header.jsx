@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { NavLink, Link } from 'react-router-dom'
 import styles from './Header.module.css'
-import logo from '../assets/images/logo-nobg.png'
+import logo from '../assets/images/logo-nobg2.png'
 
 const links = [
   { to: '/', label: 'Home', end: true },
@@ -18,7 +18,7 @@ export default function Header() {
       <div className={`container ${styles.bar}`}>
         <Link to="/" className={styles.brand} onClick={() => setOpen(false)}>
           <img src={logo} alt="One Intranet logo" className={styles.logo} />
-          <span className={styles.brandText}>One Intranet<small>Power2Connect</small></span>
+          <span className={styles.brandText}>One Intranet Corporation<small>Power2Connect</small></span>
         </Link>
         <button
           className={styles.burger}
