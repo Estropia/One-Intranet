@@ -1,7 +1,7 @@
 import SectionHeading from '../components/SectionHeading.jsx'
 import ProjectCard from '../components/ProjectCard.jsx'
 import { projects } from '../data/projects.js'
-import { coverage, coverageTotal } from '../data/coverage.js'
+import { coverage } from '../data/coverage.js'
 import styles from './Projects.module.css'
 
 export default function Projects() {
@@ -40,7 +40,7 @@ export default function Projects() {
 
       <section className={`${styles.section} ${styles.coverage}`}>
         <div className="container">
-          <SectionHeading light align="center" eyebrow="Where we operate" title={`${coverageTotal}+ barangays and growing`} />
+          <SectionHeading light align="center" eyebrow="Our reach" title="Over 29,000 barangays and growing" />
           <div className={styles.covGrid}>
             {coverage.map(c => (
               <div key={c.province} className={styles.covCard}>
