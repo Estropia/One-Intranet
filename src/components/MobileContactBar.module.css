@@ -1,0 +1,5 @@
+.bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 60; display: flex; gap: .5rem; padding: .6rem .75rem calc(.6rem + env(safe-area-inset-bottom)); background: rgba(10,22,40,.92); backdrop-filter: blur(12px); border-top: 1px solid rgba(110,240,168,.15); }
+.bar a { flex: 1; min-height: var(--tap); display: flex; align-items: center; justify-content: center; border-radius: 999px; font-weight: 600; }
+.call { color: var(--c-white); border: 1px solid rgba(255,255,255,.35); }
+.cta { background: var(--c-green-500); color: var(--c-navy-900); }
+@media (min-width: 1024px) { .bar { display: none; } }

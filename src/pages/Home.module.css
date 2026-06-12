@@ -1,0 +1,25 @@
+.hero { position: relative; width: 100%; overflow: hidden; }
+.heroVideo { display: block; width: 100%; height: auto; }
+.playBtn { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: none; border: none; cursor: pointer; width: 80px; height: 80px; padding: 0; transition: transform .2s; }
+.playBtn:hover { transform: translate(-50%, -50%) scale(1.12); }
+.stats { background: var(--c-navy-900); }
+.statsGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; padding: 3rem 0; }
+.section { padding: var(--sp-section) 0; }
+.dark { background: var(--c-navy-900); }
+.serviceGrid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; margin-top: 2.5rem; }
+.projectGrid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; margin-top: 2.5rem; }
+.center { text-align: center; margin-top: 2.5rem; }
+.ctaBand { background: linear-gradient(135deg, var(--c-green-500), var(--c-green-400)); }
+.ctaInner { text-align: center; padding: var(--sp-section) 0; color: var(--c-navy-900); }
+.ctaInner h2 { font-size: var(--fs-h2); }
+.ctaInner p { margin: .75rem 0 1.75rem; font-size: var(--fs-lead); }
+
+@media (min-width: 640px) {
+  .serviceGrid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+  .projectGrid { grid-template-columns: 1fr 1fr; }
+}
+@media (min-width: 1024px) {
+  .statsGrid { grid-template-columns: repeat(4,1fr); padding: 3.5rem 0; }
+  .serviceGrid { margin-top: 3rem; }
+  .projectGrid { grid-template-columns: repeat(3,1fr); margin-top: 3rem; }
+}

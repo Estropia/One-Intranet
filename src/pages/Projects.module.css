@@ -1,0 +1,23 @@
+.head { background: var(--c-navy-900); padding: clamp(5rem,10vw,8rem) 0 var(--sp-section); }
+.section { padding: var(--sp-section) 0; }
+.grid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
+.videos { background: var(--c-mist); }
+.videoGrid { display: grid; grid-template-columns: 1fr; gap: 2rem; margin-top: 2.5rem; }
+.videoCard video { width: 100%; border-radius: var(--radius); box-shadow: var(--shadow-card); aspect-ratio: 16/9; object-fit: cover; background: #000; }
+.videoCard figcaption { margin-top: .75rem; color: var(--c-muted); font-size: .95rem; }
+.coverage { background: var(--c-navy-900); }
+.covGrid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; margin-top: 2.5rem; }
+.covCard { background: var(--c-navy-700); border-radius: var(--radius); padding: 2rem; color: var(--c-white); text-align: center; border: 1px solid rgba(110,240,168,.12); }
+.covNum { font-family: var(--font-display); font-weight: 800; font-size: 3rem; color: var(--c-green-300); display: block; }
+.covCard h3 { margin: .25rem 0 .5rem; }
+.covCard p { color: rgba(255,255,255,.7); font-size: .9rem; }
+
+@media (min-width: 640px) {
+  .grid { grid-template-columns: 1fr 1fr; }
+  .videoGrid { grid-template-columns: 1fr 1fr; }
+  .covGrid { grid-template-columns: 1fr 1fr; }
+}
+@media (min-width: 1024px) {
+  .grid { grid-template-columns: repeat(3,1fr); }
+  .covGrid { grid-template-columns: repeat(3,1fr); }
+}

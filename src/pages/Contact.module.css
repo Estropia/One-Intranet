@@ -1,0 +1,8 @@
+.page { padding: clamp(5rem,10vw,8rem) 0 var(--sp-section); }
+.grid { display: grid; grid-template-columns: 1fr; gap: 2.5rem; align-items: start; }
+.details { list-style: none; padding: 0; margin-top: 2.5rem; display: grid; gap: 1.5rem; }
+.details li { display: grid; gap: .25rem; }
+.details strong { font-size: .8rem; letter-spacing: .1em; text-transform: uppercase; color: var(--c-green-500); }
+.details a { min-height: var(--tap); display: inline-flex; align-items: center; }
+.formWrap { background: var(--c-white); border-radius: var(--radius-lg); padding: clamp(1.5rem,4vw,2.5rem); box-shadow: var(--shadow-card); border: 1px solid rgba(10,22,40,.06); }
+@media (min-width: 1024px) { .grid { grid-template-columns: 1fr 1fr; gap: clamp(2rem,6vw,5rem); } }

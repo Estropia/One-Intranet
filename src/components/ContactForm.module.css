@@ -1,0 +1,10 @@
+.form { display: grid; gap: 1.25rem; }
+.field { display: grid; gap: .4rem; }
+.field label { font-weight: 600; font-size: .9rem; }
+.field input, .field textarea { font: inherit; font-size: 16px; padding: .85rem 1rem; min-height: var(--tap); border-radius: 12px; border: 1px solid rgba(10,22,40,.18); background: var(--c-white); }
+.field input:focus, .field textarea:focus { outline: none; border-color: var(--c-green-500); box-shadow: 0 0 0 3px rgba(22,179,100,.18); }
+.field input[aria-invalid="true"], .field textarea[aria-invalid="true"] { border-color: #d64545; }
+.error { color: #d64545; font-size: .85rem; }
+.formError { color: #d64545; }
+.success { background: var(--c-mist); border-radius: var(--radius); padding: 2.5rem; text-align: center; }
+.success h3 { color: var(--c-green-500); font-size: 1.6rem; margin-bottom: .5rem; }

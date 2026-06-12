@@ -1,0 +1,8 @@
+.wrap { max-width: 64ch; }
+.center { margin-inline: auto; text-align: center; }
+.eyebrow { display: inline-block; font-weight: 600; font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; color: var(--c-green-500); margin-bottom: .75rem; }
+.title { font-size: var(--fs-h2); }
+.lead { font-size: var(--fs-lead); color: var(--c-muted); margin-top: 1rem; }
+.light .title { color: var(--c-white); }
+.light .lead { color: rgba(255,255,255,.78); }
+.light .eyebrow { color: var(--c-green-300); }
