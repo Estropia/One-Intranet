@@ -1,6 +1,5 @@
 import SectionHeading from '../components/SectionHeading.jsx'
 import Button from '../components/Button.jsx'
-import OrgChart from '../components/OrgChart.jsx'
 import { leadership } from '../data/team.js'
 import meetings from '../assets/images/meetings-img.png'
 import coverPhoto from '../assets/images/cover-photo.png'
@@ -34,7 +33,7 @@ export default function About() {
 
       <section className={styles.section}>
         <div className={`container ${styles.center}`}>
-          <SectionHeading eyebrow="The core team" title="Leadership" align="center" />
+          <SectionHeading title="Leadership" align="center" />
           <div className={styles.teamGrid}>
             {leadership
               .filter(m => m.name !== 'Denise Mae Ferreras' && m.name !== 'Louie Ann Ferreras' && m.name !== 'Mae Anne E. Ferreras')
@@ -45,9 +44,6 @@ export default function About() {
                   <p>{m.role}</p>
                 </div>
               ))}
-          </div>
-          <div className={styles.org}>
-            <OrgChart />
           </div>
         </div>
       </section>
